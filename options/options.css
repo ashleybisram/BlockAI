@@ -105,7 +105,7 @@ html {
 
   }
 
-body, input, select, textarea {
+body, input, select {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -113,7 +113,13 @@ body, input, select, textarea {
   line-height: 1.65;
 }
 
-
+textarea{
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.65;
+}
 
   a:hover {
     border-bottom-color: transparent;
