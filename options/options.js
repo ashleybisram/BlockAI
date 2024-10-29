@@ -2,7 +2,7 @@ const save = document.getElementById('saveButton')
 
 save.addEventListener('click', function() {
     const blockList = document.getElementById('block').ariaValueMax.split('\n').map(site => site.trim()).filter(site => site);
-
+    console.log('event listener runs')
     // Saved the list to Chrome Storage
     chrome.storage.sync.set({blockList: blockList}, function() {
         alert('Block List saved!')
