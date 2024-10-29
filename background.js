@@ -46,7 +46,8 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.storage.local.get("blockingEnabled", (data) => {
-    if (data.blockingEnabled) {
+    const isEnable = data.blockingEnabled ?? false
+    if (isEnable) {
         enableBlocking();
     } else {
         disableBlocking();
