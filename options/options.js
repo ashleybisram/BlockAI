@@ -1,3 +1,5 @@
+// This file provides the JavaScript logic for the AI Blocker Settings to add user-selected blacklist sites to Chrome storage for filtering. 
+
 document.addEventListener("DOMContentLoaded", function() {
     // Find the save button element
     const save = document.getElementById('saveButton');
